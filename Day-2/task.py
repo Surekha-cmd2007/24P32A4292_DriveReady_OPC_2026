@@ -1,3 +1,12 @@
+!pip install -q openai
+
+from openai import OpenAI
+
+client = OpenAI(
+    api_key="YOUR_GROQ_API_KEY",
+    base_url="https://api.groq.com/openai/v1"
+)
+
 import json, functools
 from openai import RateLimitError, APIConnectionError
 
