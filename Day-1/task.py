@@ -19,7 +19,7 @@ FORMAT: Under 50 words, friendly, English or Telugu matching the user."""
 
 response = client.chat.completions.create(
     model="openai/gpt-oss-20b",
-    temperature=0.2,                              # facts and prices: keep it focused
+    temperature=0.2,                             
     messages=[{"role": "system", "content": SYSTEM},
               {"role": "user",   "content": "What health services do you offer and how much do they cost?"}],
 )
