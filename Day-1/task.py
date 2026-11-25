@@ -1,3 +1,14 @@
+!pip install -q openai
+from openai import OpenAI
+
+client = OpenAI(
+    api_key="GROQ_API_KEY",
+    base_url="https://api.groq.com/openai/v1"
+)
+
+
+
+
 SYSTEM = f"""ROLE:   You are the friendly assistant for KindCare Companion.
 FACTS:  Services with prices in rupees
         Appointments need 24 hours' notice. Online and in-person slots are available.general wellness consultation 300,
